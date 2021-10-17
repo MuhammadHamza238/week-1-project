@@ -1,0 +1,173 @@
+/* For small laptops */
+@media screen  and (max-width:1200px)
+{
+    .rightmainwidth
+{
+    width: 70%;
+}
+.searchbar input
+{
+    width: 400px;
+    height: 19px;
+    padding: 7px 10px 10px 0px;
+}
+}
+/* For Tablets */
+@media screen  and (max-width:992px)
+{
+    .sidebarsection1thirddiv img
+    {
+        width: 150px;
+    }
+    .searchbar input
+{
+    width: 200px;
+    height: 19px;
+    padding: 7px 10px 10px 0px;
+}
+.sidebarsection1fifthdiv input
+{
+    width: 100px;
+}
+.section1firstdiv , .section1seconddiv , .section1thirddiv ,
+.section2firstdiv , .section2seconddiv , .section2thirddiv , 
+.section3firstdiv , .section3seconddiv , .section3thirddiv ,
+.section4firstdiv , .section4seconddiv , .section4thirddiv ,
+.section5firstdiv , .section5seconddiv , .section5thirddiv,
+.section6firstdiv , .section6seconddiv , .section6thirddiv ,
+.section7firstdiv , .section7seconddiv , .section7thirddiv
+{
+    width: 34%;
+}
+.section1fourthdiv , .section2fourthdiv , .section3fourthdiv , .section4fourthdiv 
+, .section5fourthdiv , .section6fourthdiv  , .section7fourthdiv 
+
+{
+    display: none;
+}
+
+}
+/* For 768px */
+@media screen  and (max-width:768px)
+{
+    .sidebarsection1thirddiv img
+    {
+        width: 120px;
+    }
+    .searchbar input
+{
+    width: 150px;
+    height: 19px;
+    padding: 7px 10px 10px 0px;
+}
+.footersection3 table tr td:nth-child(even)
+{
+    display: none;
+}
+.footersection3 table tr td
+{
+    padding:2px;
+}
+.section1firstdiv , .section1seconddiv ,
+.section2firstdiv , .section2seconddiv ,
+.section3firstdiv , .section3seconddiv ,
+.section4firstdiv , .section4seconddiv ,
+.section5firstdiv , .section5seconddiv ,
+.section6firstdiv , .section6seconddiv , 
+.section7firstdiv , .section7seconddiv 
+{
+    width: 50%;
+    padding-right: 30px;
+    padding-bottom: 15px;
+}
+.section1fourthdiv , .section2fourthdiv , .section3fourthdiv , .section4fourthdiv 
+, .section5fourthdiv , .section6fourthdiv  , .section7fourthdiv , .section1thirddiv , .section2thirddiv , 
+.section3thirddiv , .section4thirddiv ,.section5thirddiv,.section6thirddiv, .section7thirddiv
+{
+    display: none;
+}
+.sidebarsection1fiftheendiv img
+{
+    width: 120px;
+    height: auto;
+}
+}
+/* For mobile */
+@media screen  and (max-width:576px)
+{
+    .header1
+    {
+        display: block;
+    }
+    .headerleft .logo img
+    {
+        width: 200px;
+        height: 40px;
+        padding-right: 245px;
+        padding-top: 7px;
+    }
+    .searchbar input
+    {
+        width: 350px;
+
+        height: 19px;
+        padding: 7px 10px 10px 0px;
+    }
+    .headerright
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header2left a
+    {
+        font-size: 10px;
+        padding:1px 1px;
+    }
+    .sidebarsection1
+    {
+        padding:0px;
+        font-size: 8px;
+    }
+    .footersection3 table pre
+    {
+        font-size: 6px;
+        padding-right: 6px;
+    }
+    .sidebarsection1fiftheendiv img
+    {
+        width: 100px;
+        height: auto;
+    }
+    .sidebarsection1thirddiv img
+    {
+        width: 100px;
+    }
+    .leftmainwidth
+    {
+        width:35%;
+    }
+    .rightmainwidth
+    {
+        width: 65%;
+    }
+    .section1firstdiv , 
+.section2firstdiv ,
+.section3firstdiv , 
+.section4firstdiv , 
+.section5firstdiv , 
+.section6firstdiv , 
+.section7firstdiv 
+{
+    width: 100%;
+    padding-right: 30px;
+    padding-bottom: 25px;
+}
+.section1fourthdiv , .section2fourthdiv , .section3fourthdiv , .section4fourthdiv 
+, .section5fourthdiv , .section6fourthdiv  , .section7fourthdiv , .section1thirddiv , .section2thirddiv , 
+.section3thirddiv , .section4thirddiv ,.section5thirddiv,.section6thirddiv, .section7thirddiv
+, .section7seconddiv, .section6seconddiv , .section5seconddiv ,.section4seconddiv ,.section3seconddiv ,
+.section2seconddiv ,.section1seconddiv 
+{
+    display: none;
+}
+}

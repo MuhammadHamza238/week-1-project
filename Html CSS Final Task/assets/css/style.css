@@ -1,0 +1,1064 @@
+/* @font-face 
+{
+    font-family: "amazonember";
+    src: url("http://127.0.0.1:5500/amazon.html/css/fonts/amazonember.woff") format("woff");
+    src: url("http://127.0.0.1:5500/amazon.html/css/fonts/amazonember.woff2") format("woff2"),
+    url("http://127.0.0.1:5500/amazon.html/css/fonts/amazonember.otf") format("opentype");
+} */
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Arial', sans-serif;
+}
+
+:root
+{
+    --sponsered: #c7511f;
+}
+.leftmainwidth
+{
+    width:20%;
+}
+.rightmainwidth
+{
+    width: 80%;
+}
+.header1
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.searchbar input
+{
+    width: 576px;
+    height: 19px;
+    padding: 7px 10px 10px 0px;
+}
+#selectlist
+{
+    width: 99px;
+    height: 40px;
+    font-size: 14px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+.searchicon
+{
+    border-bottom-right-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.logo img
+{
+    width: 99px;
+    height: 49px;
+    margin: 1px;
+    padding: 1px 8px 0px 6px;
+}
+.logo
+{
+    display: flex;
+    color: white;
+}
+.logo a
+{
+    margin: 0px 0px 0px 11px;
+    padding: 4px 0px 0px;
+    height: 50px;
+}
+.logo a:hover, .flagicon:hover, .return:hover, .signin:hover, .cart:hover, .header2left li:hover, .header2right a:hover
+{
+    border: 1px solid white;
+}
+.deliver
+{
+    display: flex; 
+    align-items: center;
+}
+.deliver:hover
+{
+    border: 1px solid white;
+}
+.locationicon
+{
+    padding:0px 9px;
+    padding-right: 5px;
+}
+.flagicon
+{
+    margin: 0px 0px 0px 1px;
+    padding: 0px 9px 5px;
+    display: flex;
+    align-items: center;
+}
+.flagicon img
+{
+    width: 24px;
+    height: 19px;
+    margin: 0px 2px 1px 0px;
+}
+.signin,.return
+{
+    margin: 0px 0px 0px 2px;
+    padding: 0px 9px 10px;
+}
+.signin p
+{
+    font-size: 12px;
+}
+.signin label
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+.cart
+{
+    margin: 0px 11px 0px 2px;
+    padding: 0px 9px 11px;
+    color: white;
+}
+.cart img
+{
+    padding-top: 3px;
+}
+#accountlist 
+{
+    display: none;
+}
+#accountlist:hover
+{
+    display: block;
+}
+.header1
+{
+    background-color: #0F1111;
+    display: flex;
+}
+.headerleft
+{
+    width: 220px;
+    height: 60px;
+}
+.headerright
+{
+    display: flex;
+}
+.header2
+{
+    background-color: #232F3E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+.header2left a
+{
+    color: white;
+    text-decoration: none;
+    margin: 5px 0px 6px;
+    padding: 8px 9px;
+    font-size: 14px;
+
+}
+.header2left li
+{
+    display: inline-block;
+}
+.header2right a
+{
+    color: white;
+    text-decoration: none;
+    padding: 6px 2px 7px 1px;
+    padding-top: 5px 8px 6px;
+    font-size: 14px;
+}
+.header2right
+{
+    width: 226px;
+    height: 26px;
+    margin: 6px 3px 7px 1px;
+    padding: 5px 8px 6px;
+}
+.menubar
+{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+    height: 36px;
+}
+.results
+{
+    width: 925px;
+    height: 36px;
+    padding: 0px 12px;
+    margin: 8px 0px;
+    font-size: 14px;
+}
+.sort
+{
+    margin: 8px 0px;
+    padding: 0px 12px;
+}
+#sortlist
+{
+    border-radius:8px;
+    width: 125px;
+    height: 20px;
+}
+.sortlist a
+{
+    padding: 0px 20px 0px 7px;
+    font-size: 11px;
+}
+
+/* ------------------CSS OF THE HEADER SECTION, SOME CLASSES ARE REPEATABLE -------------------------*/
+
+.outermain
+{
+    display: flex;
+    margin: 0px 7.5px;
+    padding: 14px 0px 0px;
+}
+.sidebarsection1
+{
+    padding: 0px 12px;
+    padding-left: 22px;
+    border-right: 1px solid silver;
+}
+.sidebarsection1firstdiv, .sidebarsection1seconddiv, .sidebarsection1thirddiv, .sidebarsection1fourthdiv,
+.sidebarsection1fifthdiv, .sidebarsection1sixthdiv, .sidebarsection1sevendiv, .sidebarsection1eightdiv,
+.sidebarsection1ninediv , .sidebarsection1tendiv , .sidebarsection1elevendiv, .sidebarsection1twelvediv, 
+.sidebarsection1thirteendiv, .sidebarsection1fourtheendiv, .sidebarsection1fiftheendiv
+{
+    margin-bottom: 15px;
+}
+.sidebarsection1firstdiv p, .sidebarsection1seconddiv p, .sidebarsection1seconddiv li:first-child, .sidebarsection1fourthdiv p,
+.sidebarsection1fifthdiv p, .sidebarsection1sixthdiv p, .sidebarsection1sevendiv p, .sidebarsection1eightdiv p,
+.sidebarsection1ninediv p, .sidebarsection1tendiv p, .sidebarsection1elevendiv p, .sidebarsection1twelvediv p,
+.sidebarsection1thirteendiv p , .sidebarsection1fourtheendiv p
+{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.sidebarsection1firstdiv form label
+{
+    font-size: 14px;
+    line-height: 16px;
+    margin: 16px 0px;
+}
+.sidebarsection1seconddiv li
+{
+    list-style-type: none;
+    padding-bottom: 4px;
+}
+.sidebarsection1seconddiv li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+
+}
+.sidebarsection1fourthdiv a, .sidebarsection1fifthdiv a, .sidebarsection1sixthdiv a, .sidebarsection1sevendiv a, .sidebarsection1eightdiv a,
+.sidebarsection1ninediv a, .sidebarsection1tendiv a, .sidebarsection1elevendiv a, .sidebarsection1twelvediv a,
+.sidebarsection1thirteendiv a, .sidebarsection1fourtheendiv a
+{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    display: block;
+}
+.sidebarsection1fourthdiv a:hover , .sidebarsection1fifthdiv a:hover,
+.sidebarsection1fifthdiv a:hover, .sidebarsection1sixthdiv a:hover, .sidebarsection1sevendiv a:hover, .sidebarsection1eightdiv a:hover,
+.sidebarsection1ninediv a:hover, .sidebarsection1tendiv a:hover, .sidebarsection1elevendiv a:hover, .sidebarsection1twelvediv a:hover,
+.sidebarsection1thirteendiv a:hover, .sidebarsection1fourtheendiv a:hover
+{
+    color: var(--sponsered);
+}
+
+
+.section1, .section2, .section3, .section4, .section5, .section6, .section7, .section8
+{
+    display: flex;
+    border-bottom: 1px solid silver;
+    margin-top: 10px;
+}
+.section1firstdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section1firstdiv img
+{
+    width: 240px;
+    height: 180px;
+    margin: 30px 0px 30px
+}
+.section1firstdiv a, .section1seconddiv a, .section1thirddiv a, .section1fourthdiv a
+{
+    color: silver;
+    text-decoration: none;
+    margin: 0px 0px 4px;
+    font-size: 11px;
+}
+.section1firstdiv a:hover, .section1seconddiv a:hover,.section1thirddiv a:hover, .section1fourthdiv a:hover
+{
+    color: var(--sponsered);
+}
+.section1firstdiv p, .section1seconddiv p,.section1thirddiv p, .section1fourthdiv p
+{
+    font-size: 14px;
+    padding-bottom: 4px;
+    padding-top:10px;
+}
+.section1firstdiv p:hover,.section1seconddiv p:hover,.section1thirddiv p:hover,.section1fourthdiv p:hover
+{
+    color: #c45500;
+}
+.section1firstdiv span, .section1seconddiv span, .section1thirddiv span, .section1fourthdiv span
+{
+    padding: 4px 0px 0px;
+}
+.section1firstdiv span pre, .section1seconddiv span pre, .section1thirddiv span pre, .section1fourthdiv span pre
+{
+    display: inline-block;
+    color: #007185;
+}
+
+
+/* second image */
+.section1seconddiv 
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section1seconddiv img
+{
+    margin: 4.5px 0px 4.5px;
+}
+/* Third image */
+.section1thirddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section1thirddiv img
+{
+    width: 187px;
+    height: 240px;
+    margin: 0px 26px;
+}
+
+/* fourth image */
+.section1fourthdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section1fourthdiv img
+{
+    width: 225px;
+    height: 240px;
+    margin: 0px 7.5px;
+}
+
+/* Section 2 */
+.section2firstdiv p, .section2seconddiv p,.section2thirddiv p, .section2fourthdiv p
+{
+    font-size: 14px;
+    padding-bottom: 4px;
+    padding-top:10px;
+}
+.section2firstdiv p:hover,.section2seconddiv p:hover,.section2thirddiv p:hover,.section2fourthdiv p:hover
+{
+    color: #c45500;
+}
+.section2firstdiv span, .section2seconddiv span, .section2thirddiv span, .section2fourthdiv span
+{
+    padding: 4px 0px 0px;
+}
+.section2firstdiv span pre, .section2seconddiv span pre, .section2thirddiv span pre, .section2fourthdiv span pre
+{
+    display: inline-block;
+    color: #007185;
+}
+.section2firstdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section2firstdiv img
+{
+    width: 240px;
+    height: 209px;
+    margin: 15.4px 0px;
+}
+.variation1,.variation2, .variation3, .variation4
+{
+    width:40px; height: 40px; padding-right: 12px;
+}
+.variationcolor1, .variationcolor2, .variationcolor3, .variationcolor4
+{
+    display: none;
+}
+.variation1:hover + .variationcolor1
+{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+}
+.variation2:hover + .variationcolor2
+{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+}
+.variation3:hover + .variationcolor3
+{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+}
+.variation4:hover + .variationcolor4
+{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+}
+.section2seconddiv 
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section2seconddiv img
+{
+    width: 234px;
+    height: 240px;
+    margin: 0px 3px 0px 3px;
+}
+
+.variation21,.variation22, .variation23, .variation24
+{
+    width:40px; height: 40px; padding-right: 12px;
+}
+.variationcolor21, .variationcolor22, .variationcolor23, .variationcolor24
+{
+    display: none;
+}
+.variation21:hover + .variationcolor21
+{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+}
+.variation22:hover + .variationcolor22
+{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+}
+.variation23:hover + .variationcolor23
+{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+}
+.variation24:hover + .variationcolor24
+{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+}
+
+
+.section2thirddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section2thirddiv img
+{
+    width: 222px;
+    height: 240px;
+    margin: 0px 9px;
+}
+.section2fourthdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section2fourthdiv img
+{
+    width: 240px;
+    height: 174px;
+    margin: 33px 0px 33px;
+}
+/* section3 */
+.section3firstdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section3firstdiv img
+{
+    width: 141px;
+    height: 240px;
+    margin: 0px 49px 0px 49px;
+}
+.section3seconddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section3seconddiv img
+{
+    width: 240px;
+    height: 240px;
+}
+.section3thirddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section3thirddiv img
+{
+    width: 235px;
+    height: 240px;
+    margin: 0px 2.5px 0px 2.5px;
+}
+.section3fourthdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section3fourthdiv img
+{
+    width: 240px;
+    height: 240px;
+}
+.section3firstdiv p, .section3seconddiv p,.section3thirddiv p, .section3fourthdiv p
+{
+    font-size: 14px;
+    padding-bottom: 4px;
+    padding-top:10px;
+}
+.section3firstdiv p:hover,.section3seconddiv p:hover,.section3thirddiv p:hover,.section3fourthdiv p:hover
+{
+    color: #c45500;
+}
+.section3firstdiv span, .section3seconddiv span, .section3thirddiv span, .section3fourthdiv span
+{
+    padding: 4px 0px 0px;
+}
+.section3firstdiv span pre, .section3seconddiv span pre, .section3thirddiv span pre, .section3fourthdiv span pre
+{
+    display: inline-block;
+    color: #007185;
+}
+
+/* section4 */
+.section4firstdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section4firstdiv img
+{
+    width: 240px;
+    height: 141px;
+    margin: 49px 0px 49px;
+}
+.section4seconddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section4seconddiv img
+{
+    width: 162px;
+    height: 240px;
+    margin: 0px 39px 0px 39px;
+}
+.section4thirddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section4thirddiv img
+{
+    width: 240px;
+    height: 185px;
+    margin: 27px 0px;
+}
+.section4fourthdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section4fourthdiv img
+{
+    width: 240px;
+    height: 227px;
+    margin: 6px 0px;
+}
+.section4firstdiv a, .section4seconddiv a
+{
+    color: silver;
+    text-decoration: none;
+    margin: 0px 0px 4px;
+    font-size: 11px;
+}
+.section4firstdiv a:hover, .section4seconddiv a:hover
+{
+    color: var(--sponsered);
+}
+.section4firstdiv p, .section4seconddiv p,.section4thirddiv p, .section4fourthdiv p
+{
+    font-size: 14px;
+    padding-bottom: 4px;
+    padding-top:10px;
+}
+.section4firstdiv p:hover,.section4seconddiv p:hover,.section4thirddiv p:hover,.section4fourthdiv p:hover
+{
+    color: #c45500;
+}
+.section4firstdiv span, .section4seconddiv span, .section4thirddiv span, .section4fourthdiv span
+{
+    padding: 4px 0px 0px;
+}
+.section4firstdiv span pre, .section4seconddiv span pre, .section4thirddiv span pre, .section4fourthdiv span pre
+{
+    display: inline-block;
+    color: #007185;
+}
+.variation31,.variation32
+{
+    width:40px; height: 40px; padding-right: 12px;
+}
+.variationcolor31, .variationcolor32
+{
+    display: none;
+}
+.variation31:hover + .variationcolor31
+{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+}
+.variation32:hover + .variationcolor32
+{
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding:10px 5px;
+    border-radius: 5px;
+}
+
+/* section5 */
+.section5firstdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section5firstdiv img
+{
+    width: 240px;
+    height: 240px;
+}
+.section5seconddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section5seconddiv img
+{
+    width: 240px;
+    height: 240px;
+}
+.section5thirddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section5thirddiv img
+{
+    width: 240px;
+    height: 207px;
+    margin: 16px 0px;
+}
+.section5fourthdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section5fourthdiv img
+{
+    width: 240px;
+    height: 235px;
+    margin: 2.6px 0px 2.6px;
+}
+.section5firstdiv p, .section5seconddiv p,.section5thirddiv p, .section5fourthdiv p
+{
+    font-size: 14px;
+    padding-bottom: 4px;
+    padding-top:10px;
+}
+.section5firstdiv p:hover,.section5seconddiv p:hover,.section5thirddiv p:hover,.section5fourthdiv p:hover
+{
+    color: #c45500;
+}
+.section5firstdiv span, .section5seconddiv span, .section5thirddiv span, .section5fourthdiv span
+{
+    padding: 4px 0px 0px;
+}
+.section5firstdiv span pre, .section5seconddiv span pre, .section5thirddiv span pre, .section5fourthdiv span pre
+{
+    display: inline-block;
+    color: #007185;
+}
+
+/* section6 */
+.section6firstdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section6firstdiv img
+{
+    width: 240px;
+    height: 240px;
+}
+.section6seconddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section6seconddiv img
+{
+    width:240px;
+    height: 235px;
+    margin: 2.5px 0px 2.5px;
+}
+.section6thirddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section6thirddiv img
+{
+    width: 147px;
+    height: 240px;
+    margin:  0px 46px;
+}
+.section6fourthdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section6fourthdiv img
+{
+    width: 147px;
+    height: 240px;
+    margin: 0px 46px;
+}
+.section6firstdiv p, .section6seconddiv p,.section6thirddiv p, .section6fourthdiv p, .section7thirddiv p,
+.section7seconddiv p, .section7firstdiv p
+{
+    font-size: 14px;
+    padding-bottom: 4px;
+    padding-top:10px;
+}
+.section6firstdiv p:hover,.section6seconddiv p:hover,.section6thirddiv p:hover,.section6fourthdiv p:hover,
+.section7thirddiv p:hover,.section7seconddiv p:hover, .section7firstdiv p:hover
+{
+    color: #c45500;
+}
+.section6firstdiv span, .section6seconddiv span, .section6thirddiv span, .section6fourthdiv span, 
+.section7thirddiv span, .section7seconddiv span, .section7firstdiv span 
+{
+    padding: 4px 0px 0px;
+}
+.section6firstdiv span pre, .section6seconddiv span pre, .section6thirddiv span pre, .section6fourthdiv span pre,
+.section7thirddiv span pre, .section7seconddiv span pre, .section7firstdiv span pre
+{
+    display: inline-block;
+    color: #007185;
+}dd
+.section7firstdiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section7firstdiv img
+{
+    width: 240px;
+    height: 106px;
+    margin: 66px 0px;
+}
+.section7seconddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section7seconddiv img
+{
+    width: 240px;
+    height: 175px;
+    margin: 32px 0px 32px;
+}
+.section7thirddiv
+{
+    width: 25%;
+    padding: 0px 12px;
+}
+.section7thirddiv img
+{
+    width: 162px;
+    height: 240px;
+    margin: 0px 39px 0px 39px;
+}
+/* Section 8 */
+.section8
+{
+    border-bottom: 1px solid silver;
+    height: 60px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.pagination a 
+{
+    font-size: 14px;
+    padding: 6px 15px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+.pagination a.active 
+{
+    background-color: #4CAF50;
+    color: white;
+}
+.pagination a:hover:not(.active) 
+{
+    background-color: #ddd;
+}
+.section9
+{
+    border-bottom: 1px solid silver;
+    padding:22px 12px;
+}
+.section9 h2
+{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #0f1111;
+    margin: 4px 0px 8px;
+    padding:0px 0px 4px;
+}  
+.section9 span
+{
+    font-size: 14px;
+}
+.section9 span a
+{
+    font-size: 14px;
+    margin: 0px 0px 12px;
+    color: #007185;
+    text-decoration: none;
+}
+.section10
+{
+    border-bottom: 1px solid silver;
+    padding: 0px 20px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.section10 p:first-child
+{
+    font-size: 13px;
+}
+.section10 p:last-child
+{
+    font-size: 11px;
+}
+.section10 p:last-child a
+{
+    font-size: 11px;
+    text-decoration: none;
+}
+.section10 p:last-child a:hover
+{
+    color: var(--sponsered);
+}
+.section10 button
+{
+    font-size: 12px;
+    text-decoration: none;
+    background-color: orange;
+    padding: 5px 90px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+/* Footer */
+.footerhead
+{
+    text-align: center;
+    background-color: #37475A;
+    padding: 15px 0px;
+}
+.footerhead p a
+{
+    font-size: 13px;
+    text-decoration: none;
+    color: white;
+}
+.footerhead:hover
+{
+    background-color: #37475ae3;
+}
+.footersection1
+{
+    width: 100%;
+    background-color: #232F3E;
+    display: flex;
+}
+.footersection2
+{
+    border-top: 1px solid gray;
+    width: 100%;
+    background-color: #232F3E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.footerwidth
+{
+    max-width: 1000px; 
+    margin: auto; 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 116px;
+}
+.footersection1firstdiv, .footersection1seconddiv, .footersection1thirddiv, .footersection1fourthdiv
+{
+    padding: 0px 10px;
+    font-size: 14px;
+    width: 20%;
+}
+.footersection1firstdiv h3, .footersection1seconddiv h3, .footersection1thirddiv h3, .footersection1fourthdiv h3
+{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 6px 0px 14px;
+    color: white;
+}
+.footersection1firstdiv ul li a, .footersection1seconddiv ul li a, .footersection1thirddiv ul li a, .footersection1fourthdiv ul li a
+{
+    color: #DDDDDD;
+    text-decoration: none;
+    line-height: 21px;
+    font-weight: 400;
+}
+.footersection1firstdiv ul li a:hover, .footersection1seconddiv ul li a:hover, .footersection1thirddiv ul li a:hover, .footersection1fourthdiv ul li a:hover
+{
+    text-decoration: underline;
+}
+.footersection1firstdiv ul li, .footersection1seconddiv ul li, .footersection1thirddiv ul li, .footersection1fourthdiv ul li
+{
+    list-style-type: none;
+}
+.footersection2 img
+{
+    padding: 0px 7.2px;
+    padding-right: 75px;
+}
+.footersection2 button
+{
+    padding: 6px 18px 6px 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    margin-right: 7px;
+}
+.footersection3
+{
+    color: white;
+    background-color: #131A22;
+    padding: 30px 0px;
+}
+.footersection3 table 
+{
+    margin:auto;
+}
+.footersection3 table a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+}
+.footersection3 table a:hover
+{
+    text-decoration: underline;
+}
+.footersection3 table pre
+{
+    color: #999999;
+    font-size: 10px;
+}
+
+.footersection3 table td
+{
+    padding: 0px 8.25px;
+    text-align: left;
+}
+.footersection4
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.footersection4 p
+{
+    font-size: 12px;
+    color: #dddddd;
+}
+.footersection4 a
+{
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 12px;
+    padding-right: 15px;
+}
+.footersection4 a:hover
+{
+    text-decoration: underline;
+}
